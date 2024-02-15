@@ -3902,31 +3902,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 110.49 74.93 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 996711c8-7ed2-4be6-bff1-66248e5be83c)
-    (property "Reference" "#PWR038" (at 110.49 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 110.49 69.85 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 110.49 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 110.49 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 69b48a6b-11f9-4498-b4bd-e773e44af3bd))
-    (instances
-      (project "RPI_Audio_Array"
-        (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "#PWR038") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 250.19 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9be407a9-409e-4c4d-be3d-cb3176dbb7ae)
@@ -5101,35 +5076,6 @@
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
           (reference "#PWR023") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 110.49 78.74 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f5127fb0-af10-4bb0-93a3-0716d8465869)
-    (property "Reference" "C35" (at 107.315 71.755 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nf" (at 104.775 71.755 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 109.5248 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/25237-CL31B104KBCNNNC/C24497" (at 110.49 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "lcsc" "CL31B104KBCNNNC" (at 110.49 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f653fd1b-e680-44a4-a135-b234836d9405))
-    (pin "2" (uuid eaee9797-eec3-442d-8c33-76d812b2a94e))
-    (instances
-      (project "RPI_Audio_Array"
-        (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "C35") (unit 1)
         )
       )
     )
