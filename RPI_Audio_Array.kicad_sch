@@ -2670,7 +2670,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 176.53 149.86 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e8d4422-7934-4d41-9141-15ffee0e0dce)
-    (property "Reference" "TP7" (at 170.18 154.94 90)
+    (property "Reference" "AVDD1" (at 170.18 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 170.18 152.4 90)
@@ -2682,11 +2682,11 @@
     (property "Datasheet" "~" (at 176.53 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aaafb585-e296-47c7-a548-2e88a34bb82d))
+    (pin "1" (uuid e0678de0-38bd-4188-8db3-3786dd84e2be))
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP7") (unit 1)
+          (reference "AVDD1") (unit 1)
         )
       )
     )
@@ -2842,7 +2842,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 149.86 175.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2a9625a0-d534-4804-b6cd-fdd48406fc12)
-    (property "Reference" "TP6" (at 143.51 180.34 90)
+    (property "Reference" "PCMD_GPIO1" (at 143.51 180.34 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 143.51 177.8 90)
@@ -2858,7 +2858,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP6") (unit 1)
+          (reference "PCMD_GPIO1") (unit 1)
         )
       )
     )
@@ -2892,7 +2892,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 237.49 160.02 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d1bdae4-9734-4525-9f1d-2736529fbca5)
-    (property "Reference" "TP17" (at 231.14 165.1 90)
+    (property "Reference" "+1.8V1" (at 231.14 165.1 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 231.14 162.56 90)
@@ -2908,7 +2908,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP17") (unit 1)
+          (reference "+1.8V1") (unit 1)
         )
       )
     )
@@ -3046,7 +3046,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 176.53 160.02 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3976b9ca-d7b5-42a0-8780-ae7d9d8e03bd)
-    (property "Reference" "TP9" (at 170.18 165.1 90)
+    (property "Reference" "AREG1" (at 170.18 165.1 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 170.18 162.56 90)
@@ -3062,7 +3062,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP9") (unit 1)
+          (reference "AREG1") (unit 1)
         )
       )
     )
@@ -3121,6 +3121,31 @@
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
           (reference "C14") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 257.81 149.86 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4152a831-dddd-4e46-ad3b-5ddb3daeef4a)
+    (property "Reference" "#PWR058" (at 264.16 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 261.62 149.86 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 257.81 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 257.81 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1c24daf6-1a17-40dc-b0fb-2bb743ba1611))
+    (instances
+      (project "RPI_Audio_Array"
+        (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -3264,13 +3289,13 @@
     (property "Value" "10nf" (at 134.62 44.45 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_01005_0402Metric" (at 137.16 40.3352 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 137.16 40.3352 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/15869-CL05B103KB5NNNC/C15195" (at 140.97 39.37 0)
+    (property "Datasheet" "https://jlcpcb.com/partdetail/2062-CL21B103KBANNNC/C1710" (at 140.97 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "lcsc" "CL05B103KB5NNNC" (at 140.97 39.37 0)
+    (property "lcsc" "CL21B103KBANNNC" (at 140.97 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 76fed71c-9d91-4a9d-90f0-40a41206d1fb))
@@ -3287,7 +3312,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 237.49 149.86 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 583359f5-1aba-47ab-9532-89c77722af36)
-    (property "Reference" "TP15" (at 231.14 154.94 90)
+    (property "Reference" "+5V1" (at 231.14 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 231.14 152.4 90)
@@ -3303,7 +3328,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP15") (unit 1)
+          (reference "+5V1") (unit 1)
         )
       )
     )
@@ -3312,7 +3337,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 176.53 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c935a04-eeed-4cd8-9c3e-4b323219eeab)
-    (property "Reference" "TP8" (at 170.18 160.02 90)
+    (property "Reference" "VREG1" (at 170.18 160.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 170.18 157.48 90)
@@ -3324,11 +3349,11 @@
     (property "Datasheet" "~" (at 176.53 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid acd5d55d-7cc2-438b-8480-66cd048f4ef2))
+    (pin "1" (uuid b57007df-67a6-4d69-b78e-c9b3cee2f6c6))
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP8") (unit 1)
+          (reference "VREG1") (unit 1)
         )
       )
     )
@@ -3474,7 +3499,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 149.86 165.1 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6774331f-b0aa-40e9-9359-73e46a2b968b)
-    (property "Reference" "TP4" (at 143.51 170.18 90)
+    (property "Reference" "SELECT_1" (at 140.97 170.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 143.51 167.64 90)
@@ -3490,7 +3515,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP4") (unit 1)
+          (reference "SELECT_1") (unit 1)
         )
       )
     )
@@ -3741,6 +3766,35 @@
     )
   )
 
+  (symbol (lib_id "Device:C") (at 267.97 83.82 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 79393efc-58f1-4650-91f9-6a6f115f5fd3)
+    (property "Reference" "C19" (at 270.51 82.55 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "0.1uf" (at 273.05 82.55 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 271.78 82.8548 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://jlcpcb.com/partdetail/Yageo-CC0603KRX7R9BB104/C14663" (at 267.97 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "lcsc" "CC0603KRX7R9BB104" (at 267.97 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 34c6373a-7edc-44fa-9c2a-414503821146))
+    (pin "2" (uuid 91f14eea-412f-41f3-9f3f-407df440fb61))
+    (instances
+      (project "RPI_Audio_Array"
+        (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
+          (reference "C19") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C") (at 17.78 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 797b5546-bf0a-47a1-bc0e-ee3907d29c63)
@@ -3968,7 +4022,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 149.86 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a46797a-127b-4fe1-bafa-590815dbb201)
-    (property "Reference" "TP2" (at 143.51 160.02 90)
+    (property "Reference" "PDM_IN_1" (at 140.97 160.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 143.51 157.48 90)
@@ -3984,7 +4038,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP2") (unit 1)
+          (reference "PDM_IN_1") (unit 1)
         )
       )
     )
@@ -4101,7 +4155,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 218.44 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 90b2a650-32d4-447e-906a-cf660d1aa2fb)
-    (property "Reference" "TP14" (at 212.09 160.02 90)
+    (property "Reference" "SCL1" (at 212.09 160.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 212.09 157.48 90)
@@ -4117,7 +4171,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP14") (unit 1)
+          (reference "SCL1") (unit 1)
         )
       )
     )
@@ -4392,7 +4446,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 196.85 160.02 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a03bf97d-a24b-47c9-a7ba-eb65e131b4e3)
-    (property "Reference" "TP12" (at 190.5 165.1 90)
+    (property "Reference" "SDOUT1" (at 190.5 165.1 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 190.5 162.56 90)
@@ -4408,7 +4462,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP12") (unit 1)
+          (reference "SDOUT1") (unit 1)
         )
       )
     )
@@ -4695,7 +4749,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 149.86 160.02 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bb0eee85-ba33-4774-a2f0-8d54e0299ed8)
-    (property "Reference" "TP3" (at 143.51 165.1 90)
+    (property "Reference" "PDM_IN_2" (at 140.97 165.1 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 143.51 162.56 90)
@@ -4711,7 +4765,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP3") (unit 1)
+          (reference "PDM_IN_2") (unit 1)
         )
       )
     )
@@ -5020,35 +5074,6 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 267.97 83.82 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c98c8a56-4eca-4dc7-bb6d-fe37ef7d0a9a)
-    (property "Reference" "C19" (at 264.16 82.55 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0.1uf" (at 265.43 85.09 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_01005_0402Metric" (at 271.78 82.8548 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf" (at 267.97 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "lcsc" "CL05B104KB54PNC" (at 267.97 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 73912990-4404-4c72-9083-1c692492a2e8))
-    (pin "2" (uuid f7c458b3-360b-46eb-bb5d-bca15e9f9cc6))
-    (instances
-      (project "RPI_Audio_Array"
-        (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "C19") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 33.02 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c9e95d3d-c19b-43a7-a9b6-67905a3900b8)
@@ -5135,7 +5160,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 196.85 149.86 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2761766-fd04-41c8-9a67-d3487f3b0880)
-    (property "Reference" "TP10" (at 190.5 154.94 90)
+    (property "Reference" "FSYNC1" (at 189.23 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 190.5 152.4 90)
@@ -5151,7 +5176,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP10") (unit 1)
+          (reference "FSYNC1") (unit 1)
         )
       )
     )
@@ -5214,7 +5239,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 149.86 170.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d675de9d-1897-4d71-83ee-cd718083d3ac)
-    (property "Reference" "TP5" (at 143.51 175.26 90)
+    (property "Reference" "SELECT_2" (at 139.7 175.26 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 143.51 172.72 90)
@@ -5230,7 +5255,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP5") (unit 1)
+          (reference "SELECT_2") (unit 1)
         )
       )
     )
@@ -5407,13 +5432,13 @@
     (property "Value" "10nf" (at 157.48 45.72 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_01005_0402Metric" (at 160.02 41.6052 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 160.02 41.6052 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/15869-CL05B103KB5NNNC/C15195" (at 163.83 40.64 0)
+    (property "Datasheet" "https://jlcpcb.com/partdetail/2062-CL21B103KBANNNC/C1710" (at 163.83 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "lcsc" "CL05B103KB5NNNC" (at 163.83 40.64 0)
+    (property "lcsc" "CL21B103KBANNNC" (at 163.83 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f5ceb9b3-266e-49b1-8b09-55336a51634e))
@@ -5455,7 +5480,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 196.85 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e2dcc3af-edc2-47f1-8a64-7076855a9ee5)
-    (property "Reference" "TP11" (at 190.5 160.02 90)
+    (property "Reference" "FBCLK1" (at 189.23 160.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 190.5 157.48 90)
@@ -5467,11 +5492,11 @@
     (property "Datasheet" "~" (at 196.85 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 22d15655-21bf-41b0-a95e-8e09bedb8568))
+    (pin "1" (uuid 1bc5a611-612b-4e09-97d7-7c28a367311c))
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP11") (unit 1)
+          (reference "FBCLK1") (unit 1)
         )
       )
     )
@@ -5538,7 +5563,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 149.86 149.86 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e683564e-2cde-4ca3-a04c-f8fdde8e3f28)
-    (property "Reference" "TP1" (at 143.51 154.94 90)
+    (property "Reference" "PDMCLK1" (at 142.24 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 143.51 152.4 90)
@@ -5554,7 +5579,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP1") (unit 1)
+          (reference "PDMCLK1") (unit 1)
         )
       )
     )
@@ -5563,7 +5588,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 237.49 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea1ab2c6-b74f-4c82-8079-8c24db782aae)
-    (property "Reference" "TP16" (at 231.14 160.02 90)
+    (property "Reference" "+3.3V1" (at 231.14 160.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 231.14 157.48 90)
@@ -5579,7 +5604,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP16") (unit 1)
+          (reference "+3.3V1") (unit 1)
         )
       )
     )
@@ -5613,7 +5638,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 218.44 149.86 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ed0ef0e9-fdfa-424b-850b-c346ad2bd80d)
-    (property "Reference" "TP13" (at 212.09 154.94 90)
+    (property "Reference" "SDA1" (at 212.09 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 212.09 152.4 90)
@@ -5629,7 +5654,7 @@
     (instances
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
-          (reference "TP13") (unit 1)
+          (reference "SDA1") (unit 1)
         )
       )
     )
@@ -5709,6 +5734,31 @@
       (project "RPI_Audio_Array"
         (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
           (reference "#PWR023") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 257.81 149.86 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f5d1f6b8-dd30-4637-9207-88c93f775db3)
+    (property "Reference" "GND1" (at 251.46 154.94 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TestPoint" (at 251.46 152.4 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm" (at 257.81 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 257.81 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d7bcfec6-f171-4901-ac5c-5c77f441af77))
+    (instances
+      (project "RPI_Audio_Array"
+        (path "/954bfd10-59e4-4b5e-a9fc-5f77bd6479b0"
+          (reference "GND1") (unit 1)
         )
       )
     )
