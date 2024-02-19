@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.2032,
+          "height": 0.499999,
+          "width": 0.499999
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -55,7 +55,15 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|55750000|75900000|c156e67a-53c9-4f31-8166-0092e24f49aa|a9cca896-89ff-469c-81a8-fde640dba404",
+        "clearance|56450000|75200000|c156e67a-53c9-4f31-8166-0092e24f49aa|5e932314-7276-42a8-9da3-1bbe224589a7",
+        "clearance|56450000|76600000|c156e67a-53c9-4f31-8166-0092e24f49aa|a4f4e723-cff9-409c-b170-6bc70b33272c",
+        "clearance|57150000|75900000|c156e67a-53c9-4f31-8166-0092e24f49aa|2a6ed833-c6da-4012-ad3d-5ce653c9b93b",
+        "lib_footprint_mismatch|54842000|75900000|bf7edd5f-bbe2-40d2-87c8-30f43940a694|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|80950000|92583750|9bfe5df1-787d-4bc9-92b6-a281cad2af7a|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|28450000|40900000|2fd80fe3-93b9-4894-89a0-eaf15d3c6d73|770f362c-2654-4ece-8df1-996d1e8cdf18"
+      ],
       "meta": {
         "version": 2
       },
@@ -68,7 +76,7 @@
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "error",
+        "drill_out_of_range": "ignore",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
@@ -111,19 +119,19 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.127,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.25,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.09999999999999999,
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
@@ -417,7 +425,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
