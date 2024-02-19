@@ -216,12 +216,6 @@
         (number "5" (effects (font (size 1.27 1.27))))
       )
     )
-    (symbol "SPH0690LM4H-1_1_1"
-      (pin input line (at 0 -5.08 0) (length 7.62)
-        (name "MIC_IN" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
   )
   (symbol "TLV7103318QDSERQ1" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
     (property "Reference" "U" (at 27.94 10.16 0)
